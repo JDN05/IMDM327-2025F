@@ -1,7 +1,10 @@
-![Sound](https://github.com/user-attachments/assets/348a0502-0e68-42f1-b30e-58dc77cb91aa)
+IMDM327 Jaden Chen Project 1
 
-IMDM327 Fall 2025 
+Images:
+Three Body -
 
-Course Material
+Initial Conditions
+!(https://github.com/JDN05/IMDM327-2025F/blob/main/ThreeBodyInitial)
 
-Instructor. Myungin Lee
+Trails Screenshot
+!(https://github.com/JDN05/IMDM327-2025F/blob/main/ThreeBodyTrails)
