@@ -4,7 +4,7 @@ Images:
 Three Body -
 
 Initial Conditions
-!(https://github.com/JDN05/IMDM327-2025F/blob/main/ThreeBodyInitial)
+![alt text](https://github.com/JDN05/IMDM327-2025F/blob/main/ThreeBodyInitial "Three Body Initial Condition")
 
 Trails Screenshot
-!(https://github.com/JDN05/IMDM327-2025F/blob/main/ThreeBodyTrails)
+![alt text](https://github.com/JDN05/IMDM327-2025F/blob/main/ThreeBodyTrails "Three Body Trails")
