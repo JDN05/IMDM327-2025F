@@ -5,15 +5,17 @@ public struct BodyProperty
 {
     public float mass;              
     public float distance;         
-    public float initial_velocity; 
+    public float initial_velocity;
+    public float radius;
 }
 
 public class DataCSV : MonoBehaviour
 {
     public BodyProperty[] bp;
 
-    void Start()
+    void Awake()
     {
+        Debug.Log("do i exist");
         LoadIntoArray();
     }
 
@@ -35,18 +37,32 @@ public class DataCSV : MonoBehaviour
         for (int i = 0; i < lines.Length; i++)
         {
             string line = lines[i].Trim(); 
+            
+            Debug.Log(line);
             // - Safer: Trim() is used to remove whitespace or specific characters
             string[] cols = line.Split(',');
-
+            
             if (float.TryParse(cols[2].Trim(), out float mass) &&
                 float.TryParse(cols[4].Trim(), out float dist) &&
-                float.TryParse(cols[5].Trim(), out float vel))
+                float.TryParse(cols[5].Trim(), out float vel) &&
+                float.TryParse(cols[6].Trim(), out float radius))
             {
                 // assignment into array
                 bp[i].mass = mass;
                 bp[i].distance = dist;
                 bp[i].initial_velocity = vel;
+                bp[i].radius = radius;
             }
         }
+
+        foreach (BodyProperty bp in bp)
+        {
+            Debug.Log(bp.mass + " " + bp.distance + " " + bp.initial_velocity + " " + bp.radius);
+        }
+    }
+
+    public BodyProperty[] getBP()
+    {
+        return bp;
     }
 }
